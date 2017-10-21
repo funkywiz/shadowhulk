@@ -1,0 +1,411 @@
+<div class="template-teaser_page portaltype-plone-site x userrole-anonymous campl-theme-1" ng-controller="Usercontrollers as ctrl">
+<div class="campl-wrap clearfix">
+    <div class="campl-column2">
+        <div class="campl-quicklinks">
+            <img alt="University of Cambridge" height="80" width="80" src="./images/homepage/annaunivbig.png" />
+        </div>
+        <br>
+    </div>
+    </div>    
+    <div class="campl-row campl-global-navigation-drawer">
+        <div class="campl-wrap clearfix">
+            <div class="campl-column12 campl-home-link-container">
+                <a href="" >Home</a>
+            </div>
+        </div>
+    </div>
+    <div class="campl-row campl-page-header campl-section-page template-teaser_page portaltype-plone-site site-FACBIOL icons-on userrole-anonymous campl-theme-1">
+        <div class="campl-wrap clearfix">
+            <div class="campl-column12">
+                <div class="campl-content-container" id="falcon-logo-wrapper">
+                <div style="color: white;font-size: 19 "><b><div class="actionMenu deactivated" ng-model="ctrl.Username" ng-if="ctrl.checkUsername()">Welcome {{ctrl.Username}}
+                    </div></b> </div>
+                    <div style="color: white;font-size: 19 "><b><div class="actionMenu deactivated" ng-model="ctrl.Username" ng-if="!ctrl.checkUsername()">Welcome to my Site     
+                    </div></b> </div>
+                    <ul class="actionMenu deactivated" id="portal-personaltools">
+                        <li id="anon-personalbar">
+                            <a href="" ng-click="ctrl.travsignup()" ng-if="!ctrl.checkUsername()" id="personaltools-login">Login/Register</a>
+                        </li>
+                        <li id="anon-personalbar">
+                            <a href="" ng-click="ctrl.logout()" ng-if="ctrl.checkUsername()" id="personaltools-login">Logout</a>
+                        </li>
+                    </ul>
+                    <div class="campl-breadcrumb" id="campl-breadcrumb">
+                        <ul class="campl-unstyled-list campl-horizontal-navigation clearfix">
+                            <li class="first-child">
+                                <a href="#" class="campl-home ir">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Faculty of Biology"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="campl-page-title">TICKETS HUNT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="campl-row campl-page-header">
+        <div class="campl-wrap clearfix campl-local-navigation" id="local-nav">
+            <div class="campl-local-navigation-container">
+                <ul class="campl-unstyled-list">
+                    <li>
+                        <a href="" ng-click="ctrl.travlandingpage()">
+                            <div>
+                           <span>
+                              HOME
+                          </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" ng-click="ctrl.travcourses()">
+                            <span>MATCHES</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" ng-click="ctrl.travstaff()">
+                            <span>STADIUMS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" ng-click="ctrl.travcontactus()">
+                            <span>CONTACT US</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!--<div class="campl-row campl-content campl-recessed-content">
+        <div class="campl-wrap clearfix">
+            <div class="campl-column6 campl-main-content">
+                <div class="campl-content-container campl-sub-column-right-border campl-vertical-padding clearfix">
+                    <div class="campl-column6">
+                        <div class="campl-content-container campl-side-padding">
+                            <div class="campl-teaser campl-vertical-teaser">
+                                <div class="campl-content-container campl-vertical-teaser-img">
+                                    <a href="https://www.biology.cam.ac.uk/undergrads" class="campl-teaser-img-link">
+                                        <img class="campl-scale-with-grid" src="./images/homepage/1.jpeg" alt="349 MVST Laboratory" />
+                                    </a>
+                                </div>
+                                <div class="campl-content-container campl-vertical-teaser-txt">
+                                    <h3 class="campl-teaser-title">
+                                        <a href="https://www.biology.cam.ac.uk/undergrads">For Undergraduates</a>
+                                    </h3>
+                                    <a class="campl-primary-cta" href="https://www.biology.cam.ac.uk/undergrads">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campl-column6">
+                        <div class="campl-content-container campl-side-padding campl-sub-column-left-border">
+                            <div class="campl-teaser campl-vertical-teaser">
+                                <div class="campl-content-container campl-vertical-teaser-img">
+                                    <a href="https://www.biology.cam.ac.uk/departments" class="campl-teaser-img-link">
+                                        <img class="campl-scale-with-grid" src="./images/homepage/2.jpeg" alt="349 NST Laboratory" />
+                                    </a>
+                                </div>
+                                <div class="campl-content-container campl-vertical-teaser-txt">
+                                    <h3 class="campl-teaser-title">
+                                        <a href="https://www.biology.cam.ac.uk/departments">For Departmental Staff</a>
+                                    </h3>
+                                    <a class="campl-primary-cta" href="https://www.biology.cam.ac.uk/departments">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="campl-teaser-divider" />
+                <div class="campl-content-container campl-sub-column-right-border campl-vertical-padding clearfix">
+                    <div class="campl-column6">
+                        <div class="campl-content-container campl-side-padding">
+                            <div class="campl-teaser campl-vertical-teaser">
+                                <div class="campl-content-container campl-vertical-teaser-img">
+                                    <a href="https://www.biology.cam.ac.uk/colleges" class="campl-teaser-img-link">
+                                        <img class="campl-scale-with-grid" src="./images/homepage/3.jpeg" alt="349 Post It Notes" />
+                                    </a>
+                                </div>
+                                <div class="campl-content-container campl-vertical-teaser-txt">
+                                    <h3 class="campl-teaser-title">
+                                        <a href="https://www.biology.cam.ac.uk/colleges">For College Staff</a>
+                                    </h3>
+                                    <a class="campl-primary-cta" href="https://www.biology.cam.ac.uk/colleges">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campl-column6">
+                        <div class="campl-content-container campl-side-padding campl-sub-column-left-border">
+                            <div class="campl-teaser campl-vertical-teaser">
+                                <div class="campl-content-container campl-vertical-teaser-img">
+                                    <a href="https://www.biology.cam.ac.uk/governance" class="campl-teaser-img-link">
+                                        <img class="campl-scale-with-grid" src="./images/homepage/4.jpeg" alt="349 Xray" />
+                                    </a>
+                                </div>
+                                <div class="campl-content-container campl-vertical-teaser-txt">
+                                    <h3 class="campl-teaser-title">
+                                        <a href="https://www.biology.cam.ac.uk/governance">Governance</a>
+                                    </h3>
+                                    <a class="campl-primary-cta" href="https://www.biology.cam.ac.uk/governance">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="falcon-teasers-sub-column" class="campl-column3">
+                <div class="campl-content-container campl-sub-column-left-border">
+                    <div class="campl-teaser campl-vertical-teaser">
+                        <div class="campl-content-container campl-vertical-teaser-img">
+                            <a class="campl-teaser-img-link">
+                                <img class="campl-scale-with-grid" src="./images/homepage/5.jpeg" alt="349 Periodic Table" />
+                            </a>
+                        </div>
+                        <div class="campl-content-container campl-vertical-teaser-txt">
+                            <h3 class="campl-teaser-title">About</h3>
+                            <p>The Faculty Board of Biology is responsible for the undergraduate teaching of biological sciences in the Natural Sciences Tripos through the Biological Sciences Committee, for the Medical and Veterinary Sciences Tripos through the MVST Part I Committee and for the Psychology and Behavioural Sciences Tripos through the PBS Management Committee.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+          <!--   <div class="campl-column3 campl-secondary-content campl-recessed-secondary-content">
+                <div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f46414342494f4c0a696e666f726d6174696f6e2d666f722d7374616666" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f46414342494f4c0a696e666f726d6174696f6e2d666f722d7374616666">
+                    <div class="campl-content-container falcon-linkbox-portlet">
+                        <div class="campl-heading-container">
+                            <h4>Head of the Department ...</h4>
+                        </div>
+                        <ul class="campl-unstyled-list campl-related-links">
+                            <li>
+                                Gokula Krishnan .P
+                            </li>
+                            <li>
+                                Raghi <
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f46414342494f4c0a696e666f726d6174696f6e2d666f72" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f46414342494f4c0a696e666f726d6174696f6e2d666f72">
+                    <div class="campl-content-container falcon-linkbox-portlet">
+                        <div class="campl-heading-container">
+                            <h4>Professors ...</h4>
+                        </div>
+                        <ul class="campl-unstyled-list campl-related-links">
+                            <li>
+                                Vigneshwaran
+                            </li>
+                            <li>
+                                Sivaashanth Suman R.S
+                            </li>
+                            <li>
+                                Santhosh Mohan 
+                            </li>
+                            <li>
+                                Jai vishal
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="portletWrapper" data-portlethash="706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f46414342494f4c0a72656c617465642d6c696e6b73" id="portletwrapper-706c6f6e652e7269676874636f6c756d6e0a636f6e746578740a2f46414342494f4c0a72656c617465642d6c696e6b73">
+                    <div class="campl-content-container falcon-linkbox-portlet">
+                        <div class="campl-heading-container">
+                            <h4>Sponsors ...</h4>
+                        </div>
+                        <ul class="campl-unstyled-list campl-related-links">
+                            <li>
+                                Subramanian Ramalingam     
+                            </li>
+                            <li>
+                                Sameer Ahmed
+                            </li>
+                            <li>
+                                Rakesh Khanna
+                            </li>
+                            <li>
+                                Saravana Vignesh
+                            </li>
+                            <li>
+                                Mujahid A.I
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+  -->           <!-- </div>
+        </div>
+    </div> -->
+    <div class="perspective">
+
+        <ul class="wrapper" style="color: white !important;">
+
+            <!-- <li>HOME</li>
+             <li>2</li>
+             <li>3</li>
+             <li>4</li>
+             <li>5</li>
+             <li>6</li>
+-->
+            <li ng-click="ctrl.travlandingpage()">
+                HOME
+            </li>
+            <li ng-click="ctrl.travcourses()">
+                MATCHES
+            </li>
+            <li ng-click="ctrl.travstaff()">
+                STADIUMS
+            </li>
+            <li ng-click="ctrl.travaccount()">
+                EVENTS
+            </li>
+            <li ng-click="ctrl.travcontactus()">
+                CONTACTUS
+            </li>
+        </ul>
+
+    </div>
+    <style>
+
+        * {
+            margin:0;
+            padding:0;
+            list-style:none;
+            text-decoration:none;
+            box-sizing:border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .perspective {
+            width: 100%;
+            height: 100%;
+            perspective:1000px;
+            transform-style: preserve-3d;
+        }
+
+        .wrapper {
+            transform-style: preserve-3d;
+            margin: 0 auto;
+            width:100%;
+            height:100%;
+            transition: 1s all ease-in-out;
+            -webkit-transition: 1s all ease-in-out;
+            display:flex;
+        }
+
+        .wrapper li {
+            flex-grow: 1;
+            opacity:0.8;
+            padding:200px 0;
+            font-size:56px;
+            transition: 1s all ease-in-out;
+            -webkit-transition: 1s all ease-in-out;
+            text-align:center;
+            color:red;
+            cursor:pointer;
+            background-size:cover !important;
+        }
+
+        .wrapper li:nth-of-type(1) {
+            background: url(https://images.unsplash.com/photo-1441260038675-7329ab4cc264?q=80&fm=jpg&s=b1c4700b303adfae30ee320aca07328a) no-repeat center center;
+        }
+        .wrapper li:nth-of-type(2) {
+            background: url(https://images.unsplash.com/photo-1436564989038-18b9958df72b?q=80&fm=jpg&s=63f82ffb3fa7effd45c79e0379dbdee6) no-repeat center center;
+        }
+        .wrapper li:nth-of-type(3) {
+            background: url(https://images.unsplash.com/photo-1436397543931-01c4a5162bdb?q=80&fm=jpg&s=29b3d57347ca107a06e5cfe262f24ef1) no-repeat center center;
+        }
+        .wrapper li:nth-of-type(4) {
+            background: url(https://images.unsplash.com/photo-1437623889155-075d40e2e59f?q=80&fm=jpg&s=51e3e297c2171808e0610d00b970bf7b) no-repeat center center;
+        }
+        .wrapper li:nth-of-type(5) {
+            background: url(https://images.unsplash.com/photo-1428954376791-d9ae785dfb2d?q=80&fm=jpg&s=2b9da0d2264050e32ad8ac8213a76a78) no-repeat center center;
+        }
+        .wrapper li:nth-of-type(6) {
+            background: url(https://images.unsplash.com/photo-1422433555807-2559a27433bd?q=80&fm=jpg&s=f4a3f331eed09d297e2a71e3dfea402d) no-repeat center center;
+        }
+
+        .plier {
+            transform: rotateX(20deg);
+            transform-origin:bottom;
+        }
+
+        .wrapper li.active {
+            transition-delay:1.2s;
+        }
+
+        .active{
+            transform: rotateX(0deg);
+            transform-origin:bottom;
+            flex-grow: 30 !important;
+            cursor:default;
+            opacity:1 !important;
+        }
+
+    </style>
+</div>
+</div>
+    <!--
+                <div class="campl-row campl-local-footer" id="falcon-local-footer"><div class="campl-wrap clearfix"><div class="campl-column3 campl-footer-navigation"><div class="campl-content-container campl-navigation-list"><h3><a title="contact us" href="https://www.biology.cam.ac.uk/contact">
+        Contact us
+      </a></h3><ul class="campl-unstyled-list campl-page-children"><li>
+          Postal Address:
+                                        <br />
+      
+            School of the Biological Sciences
+            
+                                        <br />
+      
+      
+            17 Mill Lane
+            
+                                        <br />
+      
+      
+            Cambridge
+            
+                                        <br />
+      
+      
+            CB2 1RX
+            
+      
+        
+                                    </li><li>
+            Information provided by:
+                                        <br /><a title="send email" href="mailto:facbiol@admin.cam.ac.uk">facbiol@admin.cam.ac.uk</a></li><li><a title="Site Privacy &amp; Cookie Policies" href="https://www.biology.cam.ac.uk/privacy-and-cookie-policies">
+          Site Privacy &amp; Cookie Policies
+        </a></li></ul></div></div><div class="campl-column3 campl-footer-navigation"></div><div class="campl-column3 campl-footer-navigation"></div><div class="campl-column3 campl-footer-navigation last"></div></div></div>-->
+    
+    <!-- .campl-global-footer ends -->
+    <!--[if lte IE 8]>
+</div>
+<![endif]-->
+<script type="text/javascript" src="./js/homepage/theme1.js"></script>
+<script type="text/javascript" src="./js/homepage/theme2.js"></script>
+<script type="text/javascript" src="./js/homepage/theme3.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var contentWidth = $('#content').width();
+
+    $("dl.image-inline.captioned, dl.image-left.captioned, dl.image-right.captioned").each(function() {
+        var caption = $(this).find('.image-caption');
+        var img     = $(this).find('img');
+        var width   = img.width()
+        var ratio   = (width < contentWidth) ? width / contentWidth : 1;
+
+        $(this).removeAttr('style');
+        caption.removeAttr('style');
+
+        img.removeAttr('width');
+        img.removeAttr('height');
+        img.css('max-width', "100%");
+        img.css('height', "auto");
+
+        $(this).css('max-width', (ratio * 100.0) + '%');
+    })
+});            
+            </script>
+        </div>	
