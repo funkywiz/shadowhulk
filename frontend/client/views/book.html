@@ -235,13 +235,10 @@
 -->           <!-- </div>
         </div>
     </div> -->
-    <div class="campl-row campl-content campl-recessed-content">
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
+    <div class="campl-row campl-content campl-recessed-content" style="background-image: url('/images/background/cricket.jpg'); display: inline-block;width: 100%;height: auto">
         <div class="plane">
             <div class="cockpit">
-                <h1>Please select a seat</h1>
+                <h1 style="color: white !important;">Please select a seat</h1>
             </div>
             <div class="exit exit--front fuselage">
 
@@ -528,10 +525,8 @@
                     </ol>
                 </li>
             </ol>
-            <div class="exit exit--back fuselage">
-
             </div>
-        </div>
+        <div class="submit"><span class='submit__text'><center>Submit</center></span></div>
         <style>
             *, *:before, *:after {
                 box-sizing: border-box;
@@ -569,7 +564,31 @@
                 width: 60%;
                 margin: 100px auto 35px auto;
             }
-*/
+*/          .submit {
+                background: #55dbb1;
+                height: 2.7em;
+                width: 13em;
+                border-radius: 2em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-family: roboto;
+                font-weight: 400;
+                font-size: 2em;
+                letter-spacing: 3px;
+                cursor: pointer;
+                width: 50%;
+                margin: 0 auto;
+            }
+
+            .submit__text {
+                opacity: 1;
+            }
+            .submit__text.active {
+                transition: 0.5s;
+                opacity: 1;
+            }
             .exit {
                 position: relative;
                 height: 50px;
@@ -745,7 +764,6 @@
             }
 
         </style>
-        <br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br>
     </div>
     <!--
