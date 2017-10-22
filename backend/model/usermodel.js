@@ -18,7 +18,7 @@ var UserSchema = mongoose.Schema({
     token:{
     	type :String
 	}
-},{collection:'users'});
+}, { collection:'users'});
 
 var User = module.exports = mongoose.model('User', UserSchema);
 
