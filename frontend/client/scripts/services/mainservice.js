@@ -6,6 +6,7 @@
 		service.verifydata=verifydata;
 		service.loginsubmit=loginsubmit;
 		service.logoutuser=logoutuser;
+		service.bookticket=bookticket;
 		return service;
 
 		function logoutuser(data){
@@ -14,8 +15,11 @@
 		function verifydata(data){
 			return $http.post('http://localhost:3000/register',data).then(successfunction,failurefunction);
 		}
-				
-		function loginsubmit(data){
+        function bookticket(data){
+            return $http.post('http://localhost:3000/booking',data).then(successfunction,failurefunction);
+        }
+
+        function loginsubmit(data){
 			return $http.post('http://localhost:3000/login',data).then(successfunction,failurefunction);		
 		}
 		/*function currentuser(){

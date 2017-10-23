@@ -574,6 +574,11 @@ module.exports.createBooking = function(newUser, callback){
     newUser.save(callback);
 };
 
+module.exports.getUserByMatch = function(match, callback){
+    var query = {match: match};
+    Book.findOne(query, callback);
+};
+
 /*
 module.exports.getUserByEmail = function(email, callback){
     var query = {email: email};
