@@ -66,7 +66,7 @@
                     </li>
                     <li>
                         <a href="" ng-click="ctrl.travstaff()">
-                            <span>STADIUMS</span>
+                            <span>TICKETS</span>
                         </a>
                     </li>
                     <li>
@@ -289,7 +289,7 @@ $(document).ready(function(){
     $("dl.image-inline.captioned, dl.image-left.captioned, dl.image-right.captioned").each(function() {
         var caption = $(this).find('.image-caption');
         var img     = $(this).find('img');
-        var width   = img.width()
+        var width   = img.width();
         var ratio   = (width < contentWidth) ? width / contentWidth : 1;
 
         $(this).removeAttr('style');

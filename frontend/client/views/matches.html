@@ -64,7 +64,7 @@
                     </li>
                     <li>
                         <a href="" ng-click="ctrl.travstaff()">
-                            <span>STADIUMS</span>
+                            <span>TICKETS</span>
                         </a>
                     </li>
                     <li>
@@ -244,20 +244,28 @@
              <li>5</li>
              <li>6</li>
 -->
-            <li ng-class="{'active':!ctrl.activeclass&&ctrl.currlist==1,'noactive':ctrl.activeclass}"  ng-mouseover="ctrl.switchclass1()">
-                <div ng-click="ctrl.travbook()">MATCH1</div>
+            <li ng-class="{'active':!ctrl.activeclass&&ctrl.currlist==1,'noactive':ctrl.activeclass}"  ng-click="ctrl.switchclass1()">
+              <!--  <div ng-click="ctrl.travbook()">MATCH1</div>-->
             </li>
-            <li  ng-class="{'active':!ctrl.activeclass&&ctrl.currlist==2,'noactive':ctrl.activeclass}"  ng-mouseover="ctrl.switchclass2()">
+            <li  ng-class="{'active':!ctrl.activeclass&&ctrl.currlist==2,'noactive':ctrl.activeclass}"  ng-click="ctrl.switchclass2()">
+<!--
                 <div ng-click="ctrl.travbook()">MATCH2</div>
+-->
             </li>
-            <li  ng-class="{'active':!ctrl.activeclass&&ctrl.currlist==3,'noactive':ctrl.activeclass}"  ng-mouseover="ctrl.switchclass3()">
+            <li  ng-class="{'active':!ctrl.activeclass&&ctrl.currlist==3,'noactive':ctrl.activeclass}"  ng-click="ctrl.switchclass3()">
+<!--
                 <div ng-click="ctrl.travbook()">MATCH3</div>
+-->
             </li>
-            <li  ng-class="{'active':!ctrl.activeclass&&ctrl.currlist==4,'noactive':ctrl.activeclass}"  ng-mouseover="ctrl.switchclass4()">
+            <li  ng-class="{'active':!ctrl.activeclass&&ctrl.currlist==4,'noactive':ctrl.activeclass}"  ng-click="ctrl.switchclass4()">
+<!--
                 <div ng-click="ctrl.travbook()">MATCH4</div>
+-->
             </li>
-            <li  ng-class="{'active':!ctrl.activeclass&&ctrl.currlist==5,'noactive':ctrl.activeclass}"  ng-mouseover="ctrl.switchclass5()">
+            <li  ng-class="{'active':!ctrl.activeclass&&ctrl.currlist==5,'noactive':ctrl.activeclass}"  ng-click="ctrl.switchclass5()">
+<!--
                 <div ng-click="ctrl.travbook()">MATCH5</div>
+-->
             </li>
         </ul>
 
@@ -308,22 +316,22 @@
         }
 
         .wrapper li:nth-of-type(1) {
-            background: url(https://images.unsplash.com/photo-1441260038675-7329ab4cc264?q=80&fm=jpg&s=b1c4700b303adfae30ee320aca07328a) no-repeat center center;
+            background: url('./images/homepage/h1.jpg') no-repeat center center;
         }
         .wrapper li:nth-of-type(2) {
-            background: url(https://images.unsplash.com/photo-1436564989038-18b9958df72b?q=80&fm=jpg&s=63f82ffb3fa7effd45c79e0379dbdee6) no-repeat center center;
+            background: url('./images/homepage/h2.jpg') no-repeat center center;
         }
         .wrapper li:nth-of-type(3) {
-            background: url(https://images.unsplash.com/photo-1436397543931-01c4a5162bdb?q=80&fm=jpg&s=29b3d57347ca107a06e5cfe262f24ef1) no-repeat center center;
+            background: url('./images/homepage/h3.jpg') no-repeat center center;
         }
         .wrapper li:nth-of-type(4) {
-            background: url(https://images.unsplash.com/photo-1437623889155-075d40e2e59f?q=80&fm=jpg&s=51e3e297c2171808e0610d00b970bf7b) no-repeat center center;
+            background: url('./images/homepage/h4.jpg') no-repeat center center;
         }
         .wrapper li:nth-of-type(5) {
-            background: url(https://images.unsplash.com/photo-1428954376791-d9ae785dfb2d?q=80&fm=jpg&s=2b9da0d2264050e32ad8ac8213a76a78) no-repeat center center;
+            background: url('./images/homepage/h5.jpg') no-repeat center center;
         }
         .wrapper li:nth-of-type(6) {
-            background: url(https://images.unsplash.com/photo-1422433555807-2559a27433bd?q=80&fm=jpg&s=f4a3f331eed09d297e2a71e3dfea402d) no-repeat center center;
+            background: url('./images/homepage/h5.jpg') no-repeat center center;
         }
 
         .plier {
@@ -332,7 +340,7 @@
         }
 
         .wrapper li.active {
-            transition-delay:0.2s;
+            transition-delay:0.7s;
         }
 
         .active{

@@ -4,6 +4,7 @@ var passport = require('passport');
 var cors = require('cors');
 var LocalStrategy = require('passport-local').Strategy;
 var User = require('../model/usermodel.js');
+var Book = require('../model/booking.js');
 var bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({extended: true}));
 router.use(bodyParser.json());
@@ -59,26 +60,42 @@ router.post('/register',function(req,res){
 });
 
 router.post('/login', function(req, res) {
-    var email = req.body.email;
-    var password = req.body.password;
-    User.getUserByEmail(email,function(err, user){
-        if(err) throw err;
-        if(!user){
-            console.log("Unknown user");
-            res.sendStatus(402);
-        }
-        User.comparePassword(password, user.password, function(err, isMatch){
-            if(err) throw err;
-            if(isMatch){
-                console.log('User is found');
-                user.token=Math.floor(Math.random()*12151215);
-                console.log(user);
-                res.status(200).json(user);
-            } else {
-                console.log("Invalid password");
-                res.sendStatus(401);
+    try {
+        var email = req.body.email;
+        var password = req.body.password;
+        User.getUserByEmail(email, function (err, user) {
+            if (err) throw err;
+            if (!user) {
+                console.log("Unknown user");
+                res.sendStatus(402);
             }
+            User.comparePassword(password, user.password, function (err, isMatch) {
+                if (err) throw err;
+                if (isMatch) {
+                    console.log('User is found');
+                    user.token = Math.floor(Math.random() * 12151215);
+                    console.log(user);
+                    res.status(200).json(user);
+                } else {
+                    console.log("Invalid password");
+                    res.sendStatus(401);
+                }
+            });
         });
-    });
+    }
+    catch(err)
+    {
+        console.log(err);
+    }
 });
+
+router.post('/seat',function (req,res) {
+    /*var data=
+        {
+            match:req.body.match,
+            matchid:req.body.matchid
+        };*/
+
+});
+
 module.exports= router;
